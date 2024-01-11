@@ -1,0 +1,4 @@
+comment = 'c function to count number of specified characters'
+default_version = '1.0'
+module_pathname = '$libdir/char_count_c'
+relocatable = true
