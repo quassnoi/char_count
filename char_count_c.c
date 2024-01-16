@@ -18,10 +18,10 @@ char_count_c(PG_FUNCTION_ARGS)
         text * inputText = PG_GETARG_TEXT_PP(0);
         text * targetChar = PG_GETARG_TEXT_PP(1);
 
-	/*        int inputText_sz = VARSIZE(inputText)-VARHDRSZ;
-		  int targetChar_sz = VARSIZE(targetChar)-VARHDRSZ;*/
-        int inputText_sz = PG_GETARG_INT32(0);
-        int targetChar_sz = PG_GETARG_INT32(1);
+	int inputText_sz = VARSIZE(inputText)-VARHDRSZ;
+	int targetChar_sz = VARSIZE(targetChar)-VARHDRSZ;
+	/*        int inputText_sz = PG_GETARG_INT32(0);
+		  int targetChar_sz = PG_GETARG_INT32(1);*/
 
         char * cp_inputText = NULL;
         char * cp_targetChar = NULL;
