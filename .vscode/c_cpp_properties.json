@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/pgsql-16/include/server",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "cStandard": "c99",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc"
+        }
+    ],
+    "version": 4
+}

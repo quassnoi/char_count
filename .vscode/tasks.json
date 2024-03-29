@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "command": "sudo",
+    "options": {
+        "cwd": "${workspaceRoot}",
+        "env": {"PATH": "/usr/pgsql-16/bin:${env:PATH}"}
+    },
+	"args": [
+        "bash",
+        "-c"
+    ],
+    "tasks": [
+        {
+            "label": "make",
+            "type": "shell",
+            "args": ["PATH=/usr/pgsql-16/bin:${env:PATH} make USE_PGXS=1"]
+        },
+        {
+            "label": "install",
+            "type": "shell",
+            "group": "build",
+            "args": ["PATH=/usr/pgsql-16/bin:${env:PATH} make USE_PGXS=1 install"]
+        }
+    ]
+}
